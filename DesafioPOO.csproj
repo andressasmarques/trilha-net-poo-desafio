@@ -6,9 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Models/Smartphone.cs"/>
-    <Compile Include="Models/Iphone.cs"/>
-    <Compile Include="Models/Nokia.cs"/>
+    <Compile Include="Models\Smartphone.cs" />
+    <Compile Include="Models\Iphone.cs" />
+    <Compile Include="Models\Nokia.cs" />
   </ItemGroup>
 
 </Project>

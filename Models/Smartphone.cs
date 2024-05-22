@@ -1,4 +1,4 @@
-namespace DesafioPOO.Models; 
+namespace DesafioPOO.Models
 {
     public abstract class Smartphone
     {
