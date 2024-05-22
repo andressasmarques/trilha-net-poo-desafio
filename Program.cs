@@ -1,18 +1,22 @@
-﻿using System;
-using DesafioPOO.Models;
+﻿using DesafioPOO.Models;
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
-        Console.WriteLine("Teste com iPhone:");
-        Smartphone iphone = new Iphone("123456", "iPhone 13", "111111111111111", 128);
+        // Realizar os testes com as classes Nokia e Iphone
+        Iphone iphone = new Iphone("+55 11 99973-4531", "iPhone 14 PRO MAX", "0849751127584612309", 128);
         iphone.Ligar();
-        iphone.InstalarAplicativo("WhatsApp");
+        // Joãozinho não atendeu, mas retornou a ligação
+        iphone.ReceberLigacao();
+        // Joãozinho pediu para instalarmos o app para jogar juntos
+        iphone.InstalarAplicativo("8 Ball Pool - Sinuca Online");
 
-        Console.WriteLine("\nTeste com Nokia:");
-        Smartphone nokia = new Nokia("654321", "Nokia 3310", "222222222222222", 32);
+        Nokia nokia = new Nokia("+55 11 98856-7594", "Nokia G60 5G", "5128764756948655239456", 128);
+        nokia.Ligar();
+        // Roberto não atendeu, mas retornou a ligação
         nokia.ReceberLigacao();
-        nokia.InstalarAplicativo("Telegram");
+        // Roberto nos pediu para instalar o Instagram
+        nokia.InstalarAplicativo("Instagram");
     }
 }
